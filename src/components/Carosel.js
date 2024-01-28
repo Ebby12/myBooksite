@@ -3,7 +3,7 @@ import React, { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { BookContext } from "../context/book.context";
-import { getImageURL } from "../data/constants";
+import { getImageURL } from "../resources/constants";
 
 const books = [
   // Add your book data here (image URLs, titles, etc.)

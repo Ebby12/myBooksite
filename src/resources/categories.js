@@ -1,0 +1,82 @@
+export const categories = [
+  {
+    name: "Arts",
+    subcategories: [
+      "Architecture",
+      "Art Instruction",
+      "Art History",
+      "Dance",
+      "Design",
+      "Fashion",
+      "Film",
+      "Graphic Design",
+      "Music",
+      "Music Theory",
+      "Painting",
+      "Photography",
+    ],
+  },
+  {
+    name: "Fiction",
+    subcategories: [
+      "Fantasy",
+      "Historical Fiction",
+      "Horror",
+      "Humor",
+      "Literature",
+      "Magic",
+      "Mystery and detective stories",
+      "Plays",
+      "Poetry",
+      "Romance",
+      "Science Fiction",
+      "Short Stories",
+      "Thriller",
+      "Young Adult",
+    ],
+  },
+  {
+    name: "Animals",
+    subcategories: ["Bears", "Cats", "Kittens", "Dogs", "Puppies"],
+  },
+  {
+    name: "Science & Mathematics",
+    subcategories: [
+      "Biology",
+      "Chemistry",
+      "Mathematics",
+      "Physics",
+      "Programming",
+    ],
+  },
+  {
+    name: "Business & Finance",
+    subcategories: [
+      "Management",
+      "Entrepreneurship",
+      "Business Economics",
+      "Business Success",
+      "Finance",
+    ],
+  },
+  {
+    name: "Children's",
+    subcategories: [
+      "Kids Books",
+      "Stories in Rhyme",
+      "Baby Books",
+      "Bedtime Books",
+      "Picture Books",
+    ],
+  },
+  {
+    name: "History",
+    subcategories: [
+      "Ancient Civilization",
+      "Archaeology",
+      "Anthropology",
+      "World War II",
+      "Social Life and Customs",
+    ],
+  },
+];
