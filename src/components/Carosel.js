@@ -87,7 +87,7 @@ const BookCarousel = () => {
       currentIndex > 0 ? currentIndex - 1 : books.works.length - 5
     );
   };
-
+  if (!books) return;
   return (
     <div>
       <h1>{String(category).toLocaleUpperCase()} Books</h1>

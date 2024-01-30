@@ -6,25 +6,6 @@ import { BookContext } from "../context/book.context";
 import { categories } from "../resources/categories";
 import { getAuthorURL } from "../resources/constants";
 
-const bookCategories = [
-  {
-    name: "Fiction",
-    subcategories: ["Mystery", "Romance", "Thriller"],
-  },
-  {
-    name: "Non-Fiction",
-    subcategories: ["History", "Science", "Biography"],
-  },
-  {
-    name: "Science Fiction",
-    subcategories: ["Space Opera", "Cyberpunk", "Dystopian"],
-  },
-  {
-    name: "Fantasy",
-    subcategories: ["Epic Fantasy", "Urban Fantasy", "High Fantasy"],
-  },
-];
-
 const CategoryContainer = styled.div`
   display: flex;
   flex-wrap: wrap;

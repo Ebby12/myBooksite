@@ -11,8 +11,8 @@ const BookDetailContainer = styled.div`
 `;
 
 const BookImage = styled.img`
-  max-width: 200px;
-  height: auto;
+  max-width: 400px;
+  height: 400px;
   margin-right: 20px;
 `;
 
@@ -51,34 +51,20 @@ const BookDetail = () => {
   const id = path[path?.length - 1];
   const location = useLocation();
 
-  const { book: x } = location?.state;
-  console.log(x);
-
-  const book = {
-    title: "Book Title",
-    rating: 4.5,
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-    publishDate: "January 1, 2023",
-    publisher: "Publisher Name",
-    language: "English",
-    pages: 300,
-    categories: ["Fiction", "Mystery"],
-    priceAmazon: "https://www.amazon.com/example-book",
-  };
+  const { book } = location?.state;
 
   return (
     <BookDetailContainer>
-      <BookImage src={getImageURL(x.cover_id)} alt={x.title} />
+      <BookImage src={getImageURL(book.cover_id)} alt={book.title} />
       <DetailsContainer>
-        <Title>{x.title}</Title>
-        <Rating>Rating: {book.rating}</Rating>
-        <DetailItem>First Publish Year: {x.first_publish_year}</DetailItem>
-        <DetailItem>Publisher: {book.publisher}</DetailItem>
-        <DetailItem>Language: {book.language}</DetailItem>
-        <DetailItem>Pages: {book.pages}</DetailItem>
-        <DetailItem>Categories: {x.subject.join(", ")}</DetailItem>
+        <Title>{book.title}</Title>
+        <DetailItem>First Publish Year: {book.first_publish_year}</DetailItem>
+        <DetailItem>
+          Author(s): {book.authors?.map((author) => author.name).join(", ")}
+        </DetailItem>
+        <DetailItem>Categories: {book.subject.join(", ")}</DetailItem>
         <PriceLink
-          href={book.priceAmazon}
+          href={"https://www.amazon.com/example-book"}
           target="_blank"
           rel="noopener noreferrer"
         >
